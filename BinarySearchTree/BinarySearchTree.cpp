@@ -21,8 +21,14 @@ public:
 	Node* ROOT;
 
 	BinaryTree() {
-		ROOT = nullptr;  // Initializing ROOT to null
+		ROOT = nullptr;  
 	}
 
+	void insert(string element) {
+		Node* newNode = new Node(element, nullptr, nullptr);
+		newNode->info = element;
+		newNode->leftchild = nullptr;
+		newNode->rightchild = nullptr;
+	}
 
 };
